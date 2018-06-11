@@ -10,6 +10,10 @@ public class GetBarsfStorageFeeRatesReq extends BaseReq {
     @Key("endBarsfMilestoneIndex")
     private int endBarsfMilestoneIndex;
 
+    public GetBarsfStorageFeeRatesReq() {
+        super("getBarsfStorageFeeRates");
+    }
+
     public int getStartBarsfMilestoneIndex() {
         return startBarsfMilestoneIndex;
     }

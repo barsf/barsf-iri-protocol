@@ -4,14 +4,14 @@ import com.google.api.client.util.Key;
 
 public class BaseRes {
 
-    @Key("command")
-    private String command;
+    @Key("duration")
+    private Long duration;
 
-    public String getCommand() {
-        return command;
+    public Long getDuration() {
+        return duration;
     }
 
-    public void setCommand(String command) {
-        this.command = command;
+    public void setDuration(Long duration) {
+        this.duration = duration;
     }
 }

@@ -4,15 +4,18 @@ import com.google.api.client.util.Key;
 
 public class BaseReq {
 
-    @Key("duration")
-    private Long duration;
+    @Key("command")
+    private String command;
 
-    public Long getDuration() {
-        return duration;
+    public BaseReq(String command) {
+        this.command = command;
     }
 
-    public void setDuration(Long duration) {
-        this.duration = duration;
+    public String getCommand() {
+        return command;
     }
 
+    public void setCommand(String command) {
+        this.command = command;
+    }
 }

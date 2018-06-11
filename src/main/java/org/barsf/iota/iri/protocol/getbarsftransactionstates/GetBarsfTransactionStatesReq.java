@@ -10,6 +10,10 @@ public class GetBarsfTransactionStatesReq extends BaseReq {
     @Key("hashes")
     private List<String> hashes;
 
+    public GetBarsfTransactionStatesReq() {
+        super("getBarsfTransactionStates");
+    }
+
     public List<String> getHashes() {
         return hashes;
     }

@@ -7,6 +7,10 @@ import java.util.List;
 
 public class GetBarsfBalancesReq extends BaseReq {
 
+    public GetBarsfBalancesReq() {
+        super("getBarsfBalances");
+    }
+
     @Key("addresses")
     private List<String> addresses;
 
