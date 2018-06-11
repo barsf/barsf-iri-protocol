@@ -1,0 +1,29 @@
+group 'org.barsf.iota'
+version '0.0.1-SNAPSHOT'
+
+
+apply plugin: 'java'
+apply plugin: 'maven'
+
+sourceCompatibility = 1.8
+
+repositories {
+    mavenCentral()
+}
+
+uploadArchives {
+    repositories {
+        mavenDeployer {
+            repository(url: "http://maven.barsf.org:8081/repository/maven-snapshots") {
+                authentication(userName: "developer", password: "VTvQMV5Om02W6yE3")
+            }
+            pom.version = "0.0.1-SNAPSHOT"
+            pom.artifactId = "barsf-signer-protocol"
+            pom.groupId = "org.barsf.iota"
+        }
+    }
+}
+
+dependencies {
+    compile group: 'com.google.http-client', name: 'google-http-client-gson', version: '1.23.0'
+}
