@@ -5,7 +5,7 @@ import org.barsf.iota.iri.protocol.BaseRes;
 
 import java.util.List;
 
-public class GetStorageFeeRateRes extends BaseRes {
+public class GetBarsfStorageFeeRatesRes extends BaseRes {
 
     @Key("rates")
     private List<String> rates;

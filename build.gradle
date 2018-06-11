@@ -18,7 +18,7 @@ uploadArchives {
                 authentication(userName: "developer", password: "VTvQMV5Om02W6yE3")
             }
             pom.version = "0.0.1-SNAPSHOT"
-            pom.artifactId = "barsf-signer-protocol"
+            pom.artifactId = "barsf-iri-protocol"
             pom.groupId = "org.barsf.iota"
         }
     }

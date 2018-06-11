@@ -3,7 +3,7 @@ package org.barsf.iota.iri.protocol.getstoragefeerate;
 import com.google.api.client.util.Key;
 import org.barsf.iota.iri.protocol.BaseReq;
 
-public class GetStorageFeeRateReq extends BaseReq {
+public class GetBarsfStorageFeeRatesReq extends BaseReq {
 
     @Key("startBarsfMilestoneIndex")
     private int startBarsfMilestoneIndex;

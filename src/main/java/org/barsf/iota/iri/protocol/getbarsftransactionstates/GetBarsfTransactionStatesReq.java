@@ -1,11 +1,11 @@
 package org.barsf.iota.iri.protocol.getbarsftransactionstates;
 
 import com.google.api.client.util.Key;
-import org.barsf.iota.iri.protocol.BaseRes;
+import org.barsf.iota.iri.protocol.BaseReq;
 
 import java.util.List;
 
-public class GetBarsfTransactionStatesReq extends BaseRes {
+public class GetBarsfTransactionStatesReq extends BaseReq {
 
     @Key("hashes")
     private List<String> hashes;
